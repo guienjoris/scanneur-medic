@@ -7,14 +7,15 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 
 @Database(
-    entities = [ScannedMedicamentEntity::class],
-    version = 1,
+    entities = [ScannedMedicamentEntity::class, PrescriptionEntity::class],
+    version = 2,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun scannedMedicamentDao(): ScannedMedicamentDao
+    abstract fun prescriptionDao(): PrescriptionDao
 
     companion object {
         @Volatile
@@ -26,7 +27,9 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "medicaments_database"
-                ).build()
+                )
+                .fallbackToDestructiveMigration(dropAllTables = true)
+                .build()
                 INSTANCE = instance
                 instance
             }

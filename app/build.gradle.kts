@@ -52,8 +52,9 @@ dependencies {
     implementation(libs.androidx.camera.lifecycle)
     implementation(libs.androidx.camera.view)
 
-    // ML Kit Barcode Scanning
+    // ML Kit Barcode & Text Recognition
     implementation(libs.mlkit.barcode.scanning)
+    implementation(libs.mlkit.text.recognition)
 
     // Retrofit & OkHttp
     implementation(libs.retrofit)
