@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.68"
+        android:scaleY="0.68"
+        android:rotation="-45">
+
+        <!-- Top Half of Capsule (Vibrant Cyan/Teal #00B4D8) -->
+        <path
+            android:fillColor="#00B4D8"
+            android:pathData="M 40,28 C 40,20.27 46.27,14 54,14 C 61.73,14 68,20.27 68,28 L 68,54 L 40,54 Z" />
+
+        <!-- Bottom Half of Capsule (Clean White #FFFFFF) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M 40,54 L 68,54 L 68,80 C 68,87.73 61.73,94 54,94 C 46.27,94 40,87.73 40,80 Z" />
+
+        <!-- Middle Seam Ring -->
+        <path
+            android:fillColor="#0F172A"
+            android:pathData="M 38,52.5 L 70,52.5 L 70,55.5 L 38,55.5 Z" />
+
+        <!-- Glossy Highlight / Reflection -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:fillAlpha="0.35"
+            android:pathData="M 45,24 C 43,28 43,45 43,48 L 47,48 C 47,45 47,28 45,24 Z" />
+    </group>
+
+    <!-- Scan Sparkle / Medical Plus Badge -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.68"
+        android:scaleY="0.68">
+        <path
+            android:fillColor="#34D399"
+            android:pathData="M 75,27 L 81,27 L 81,21 L 87,21 L 87,27 L 93,27 L 93,33 L 87,33 L 87,39 L 81,39 L 81,33 L 75,33 Z" />
+    </group>
+
+</vector>
